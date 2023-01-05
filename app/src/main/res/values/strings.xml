@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GAN</string>
+    <string name="credits">Credits</string>
+    <string name="scientistMsgStart">Let\'s do some science! Please choose a suitable amount of substance to give to our \"volunteer\" test subject.</string>
+    <string name="min">min</string>
+    <string name="max">max</string>
+    <string name="give">Give</string>
+    <string name="scientistMsgTooLow">That amount was too <font color='#4287f5'>low </font>! You should give <font color = "#f54242">more</font>.</string>
+    <string name="scientistMsgTooHigh">That amount was too <font color='#f54242' textStyle = "bold">high </font>! You should give <font color = "#4287f5" textStile = "bold">less</font>.</string>
+    <string name="you_win">YOU WIN</string>
+    <string name="you_lose">YOU LOSE</string>
+    <string name="unimplemented_feature_msg">This feature has not been implemented yet</string>
+    <string name="unimplemented_feature_title">Coming Soon!</string>
+    <string name="OK">OK</string>
+
+</resources>

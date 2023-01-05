@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/play_background_834212afd533eab2211af621400fc0e2"
+    tools:context=".view.singleplayergame.SinglePlayerGameActivity">
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llLivesBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/ivCurrentLife"
+        android:layout_width="192dp"
+        android:layout_height="158dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <ImageView
+        android:id="@+id/ivScientist"
+        android:layout_width="62dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="388dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/think_emoji_face_expression_128" />
+
+    <ImageView
+        android:id="@+id/ivScientistBaloon"
+        android:layout_width="334dp"
+        android:layout_height="118dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="40dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/ivScientist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ivScientist"
+        app:srcCompat="@drawable/free_cartoon_water_bubbles_png_message_icon_transparent_removebg_preview_1_" />
+
+    <TextView
+        android:id="@+id/tvScientistMsg"
+        android:layout_width="293dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/ivScientistBaloon"
+        app:layout_constraintTop_toTopOf="@+id/ivScientistBaloon" />
+
+    <TextView
+        android:id="@+id/tvLowerBoundValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="11dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/msbGuess"
+        app:layout_constraintEnd_toStartOf="@+id/msbGuess"
+        app:layout_constraintTop_toTopOf="@+id/msbGuess"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvUpperBoundValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="11dp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/msbGuess"
+        app:layout_constraintStart_toEndOf="@+id/msbGuess"
+        app:layout_constraintTop_toTopOf="@+id/msbGuess"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorAccent"
+        android:text="@string/give"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGuess"
+        android:layout_width="62dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="99dp"
+        android:layout_marginEnd="95dp"
+        android:background="#FFFFFF"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="@+id/msbGuess"
+        app:layout_constraintStart_toStartOf="@+id/msbGuess"
+        app:layout_constraintTop_toBottomOf="@+id/ivScientistBaloon" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGuess"
+        app:layout_constraintEnd_toStartOf="@+id/tvGuess"
+        app:layout_constraintTop_toTopOf="@+id/tvGuess"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/banner_free_flask_drawing_at_getdrawings_com_free_removebg_preview" />
+
+    <Button
+        android:id="@+id/bPlus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="96dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toEndOf="@+id/tvGuess"
+        app:layout_constraintTop_toTopOf="@+id/ivScientistBaloon" />
+
+    <Button
+        android:id="@+id/bMinus"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="@+id/bPlus"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/bPlus"
+        app:layout_constraintTop_toBottomOf="@+id/bPlus" />
+
+    <mp.homework.gan.view.MappableSeekBar
+        android:id="@+id/msbGuess"
+        android:layout_width="256dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="78dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGuess" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
